@@ -6,8 +6,12 @@
   "scripts": {
     "start": "node server.ts",
     "server": "nodemon server.ts",
-    "build": "npx tsc"
+    "postinstall": "tsc",
+    "build": "npx tsc",
+    "watch-ts": "tsc -w",
+    "deploy": "git add . && git commit -m Heroku && git push heroku master"
   },
+  "engines": { "node": "16.15.1" },
   "keywords": [],
   "author": "",
   "license": "ISC",
