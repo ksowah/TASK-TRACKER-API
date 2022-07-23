@@ -1,1 +1,1 @@
-worker: npm run server
+worker: node dist/server.js
