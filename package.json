@@ -1,5 +1,5 @@
 {
-  "name": "todo",
+  "name": "task-tracker",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -7,7 +7,6 @@
     "start": "node server.ts",
     "server": "nodemon server.ts",
     "postinstall": "tsc",
-    "build": "npx tsc",
     "watch-ts": "tsc -w",
     "deploy": "git add . && git commit -m Heroku && git push heroku master"
   },
