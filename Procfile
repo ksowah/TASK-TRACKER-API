@@ -1,1 +1,1 @@
-web: node dist/server.ts
+worker: npm run server
