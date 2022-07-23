@@ -6,9 +6,7 @@
   "scripts": {
     "start": "node server.ts",
     "server": "nodemon server.ts",
-    "postinstall": "tsc",
-    "watch-ts": "tsc -w",
-    "deploy": "git add . && git commit -m Heroku && git push heroku master"
+    "postinstall": "tsc"
   },
   "engines": { "node": "16.15.1" },
   "keywords": [],
