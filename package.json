@@ -7,9 +7,9 @@
     "node": "16.15.1"
   },
   "scripts": {
+    "build": "npx tsc",
     "start": "node dist/server.js",
-    "server": "nodemon server.ts",
-    "postinstall": "tsc"
+    "server": "nodemon server.ts"
   },
   "keywords": [],
   "author": "",
