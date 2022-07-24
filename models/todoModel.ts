@@ -6,6 +6,10 @@ const todoSchema = new mongoose.Schema({
         type: String,
 		required: [true, "Please add a todo text value"],
     },
+    completed: {
+        type: Boolean,
+        default: false
+    },
    
 },
 {
