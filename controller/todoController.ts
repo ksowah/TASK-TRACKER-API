@@ -3,7 +3,7 @@ import todoSchema from "../models/todoModel"
 
 
 export const getTodo = async (req: Request, res: Response) => {
-    const todos = await todoSchema.find({})
+    const todos = await todoSchema.find()
     if(!todos){
         res.status(400)
         throw new Error("No todos available")
@@ -20,9 +20,7 @@ export const postTodo = async (req: Request, res: Response) => {
 
     console.log(req.body)
 
-    const todo = await todoSchema.create({
-        todo: req.body.todo
-    })
+    const todo = await todoSchema.create(req.body)
 
     res.status(200).json(todo)
 }
