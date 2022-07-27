@@ -1,2 +1,2 @@
 worker: node dist/index.js
-web: node index.ts
+web: node index.js
